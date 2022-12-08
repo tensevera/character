@@ -96,13 +96,7 @@ while running:
     screen.blit(score_value, (0,0))
     screen.blit(timer_value, (0,font_size))
 
-    snake_head = []
-    snake_head.append(x)
-    snake_head.append(y)
-
-    character_body.append(snake_head)
-    if (len(character_body) > character_length):
-        del character_body[0]
+    screen.blit(character, (x,y))
 
 
     pygame.display.update()
